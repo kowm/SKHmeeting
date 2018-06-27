@@ -1,33 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 
-
-    <!--content-->
+    <!--Content-->
     <LinearLayout
         android:orientation="vertical"
         android:layout_margin="@dimen/margin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
 
+        <!--Logo-->
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/kowm"
+            android:layout_width="@dimen/logo"
+            android:layout_height="@dimen/logo" />
 
-        <!--logo-->
+        <!--User-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--icon-->
             <ImageView
-                android:src="@drawable/kowm"
-                android:layout_gravity="center_horizontal"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/kowm_action_user"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
-    <!--User-->
-    <!--password-->
-    <!--Login-->
-    <!--Register-->
+            <!--Text Find-->
+            <EditText
+                android:hint="User :"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
 
+        </LinearLayout>
+
+        <!--Password-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--icon-->
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/kowm_action_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--Text Find-->
+            <EditText
+                android:hint="Password :"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
 
-    <LinearLayout
+        </LinearLayout>
+
+        <!--Login-->
+        <Button
+            android:text="Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--Register-->
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
+            android:text="New Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
 
 
 
