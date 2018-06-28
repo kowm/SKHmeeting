@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import kowm.sangkhahospital.com.skhmeeting.R;
 
@@ -18,6 +19,19 @@ public class Mainflagment extends Fragment{
 
 
 //        Register Controller
+        TextView textView = getView().findViewById(R.id.txtNewRegister);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+//                Replace Flagment
+                getActivity()
+                        .getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.contentmainflagment,new Registerflagment())
+                        .commit();
+            }
+        });
 
     }  // MainMethod
 
