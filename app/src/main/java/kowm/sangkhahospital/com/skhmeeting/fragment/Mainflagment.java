@@ -29,6 +29,7 @@ public class Mainflagment extends Fragment{
                         .getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.contentmainflagment,new Registerflagment())
+                        .addToBackStack(null)
                         .commit();
             }
         });
