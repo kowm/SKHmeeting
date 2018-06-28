@@ -10,21 +10,12 @@ import android.view.ViewGroup;
 
 import kowm.sangkhahospital.com.skhmeeting.R;
 
-public class Mainflagment extends Fragment{
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-
-
-//        Register Controller
-
-    }  // MainMethod
+public class Registerflagment extends Fragment{
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_main, container, false );
-        return  view;
+        View view = inflater.inflate(R.layout.fragment_register, container, false);
+        return view;
     }
-} // main Class
+}
