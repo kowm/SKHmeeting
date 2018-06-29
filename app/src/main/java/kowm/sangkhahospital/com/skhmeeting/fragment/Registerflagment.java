@@ -77,7 +77,7 @@ public class Registerflagment extends Fragment{
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                getActivity().getSupportFragmentManager().popBackStack();
             }
         });
     }
