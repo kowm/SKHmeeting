@@ -32,21 +32,21 @@
 
         <!--Name-->
         <EditText
-            android:id="@+id/editname"
+            android:id="@+id/edtname"
             android:background="@drawable/display_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <!--User-->
         <EditText
-            android:id="@+id/editUser"
+            android:id="@+id/edtUser"
             android:background="@drawable/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <!--Password-->
         <EditText
-            android:id="@+id/editpassword"
+            android:id="@+id/edtpassword"
             android:background="@drawable/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
